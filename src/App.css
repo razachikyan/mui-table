@@ -1,38 +1,93 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
+  align-items: center;
   flex-direction: column;
+  justify-content: space-between;
+}
+
+.idColumn {
+  height: initial !important;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.lastNameColumn {
+  height: initial !important;
+  cursor: pointer;
+  background-color: #e0f7fa;
+  color: #00796b;
+  font-weight: bold;
+}
+
+.firstNameColumn {
+  height: initial !important;
+  cursor: pointer;
+  background-color: #fff3e0;
+  color: #e65100;
+  font-weight: bold;
+}
+
+.ageColumn {
+  height: initial !important;
+  cursor: pointer;
+  background-color: #ede7f6;
+  color: #5e35b1;
+}
+
+.avatarColumn {
+  height: initial !important;
+  cursor: pointer;
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.modal-back {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.modal {
+  padding: 20px;
+  border-radius: 20px;
+  width: 300px;
+  height: 200px;
+  background-color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.modal__id {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.table-row {
+  min-height: 100px !important;
+  max-height: 300px !important;
+}
+
+.table-dark, .table-dark {
+  margin-bottom: 20px;
+}
+
+.table-light,
+.table-light .header-cell,
+.table-light .MuiDataGrid-footerContainer {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+.table-dark,
+.table-dark .header-cell,
+.table-dark .MuiDataGrid-footerContainer {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+.table-dark .MuiTablePagination-toolbar {
+  color: #fff !important;
+}
+
+.input {
+  color: gray;
 }
